@@ -1,0 +1,131 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    background-color: #020301;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-size-adjust: 100%;
+    font-family: 'Poppins', sans-serif; /* Link to a Google Font */
+    line-height: 1.6;
+    color: #333; /* Softer text color */
+    cursor: url('custom-cursor.png'), auto; /* Use a PNG as a cursor */
+    box-shadow: #084ada;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+/* Frame Styles */
+.frame {
+    height: 400px;
+    width: 360px;
+    background-color: rgb(22, 150, 230);
+    padding: 10px;
+    box-shadow: 5px 5px 15px #d42bad, -5px -5px 10px #ffffff;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #68cdca, #7a61ad);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.button {
+    width: 60px;
+    height: 50px;
+}
+
+#display {
+    font-size: 20px;
+}
+}
+
+/* Heading Styles */
+.heading {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+}
+
+/* Display Styles */
+#display {
+    height: 90px;
+    width: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: inset 2px 2px 10px #7a61ad, inset -5px -5px 10px #d1538e;
+    font-size: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+    border-radius: 10px;
+}
+
+#display:focus {
+    outline: 3px solid #7a61ad; /* Highlight input when focused */
+    background-color: #f0e68c;
+}
+
+
+/* Button Group Styles */
+.buttons-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Button Styles */
+.button {
+    width: 70px;
+    height: 60px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 15px rgb(154, 205, 50), -5px -5px 10px #084ada;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button.active {
+    box-shadow: inset 1px 1px 5px #babeec, inset -1px -1px 2px #ffffff;
+    background-color: red;
+    color: #68cdca;
+    cursor: pointer;
+    transform: scale(1.1); /* Button enlarges on hover */
+}
+
+.button:hover {
+    background-color: red;
+    color: #68cdca;
+    cursor: pointer;
+}
+
+.button:hover::after {
+    content: 'Click me!';
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    top: -30px; /* Adjust based on button */
+}
+
+
+/* Footer Heading Styles */
+.footer-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: 30px;
+    font-size: 14px;
+    background-color: yellowgreen;
+}
